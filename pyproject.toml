@@ -1,0 +1,23 @@
+[project]
+name = "search-mcp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Mohammed Ammar Kurabi", email = "kurabi@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "dotenv>=0.9.9",
+    "mcp>=2.3.0",
+    "requests>=2.34.2",
+    "tavily>=1.1.0",
+    "typing>=3.10.0.0",
+]
+
+[project.scripts]
+search-mcp = "search_mcp:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
